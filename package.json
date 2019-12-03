@@ -1,6 +1,7 @@
 {
   "name": "@shuhei/inline-require-webpack-plugin",
   "version": "0.0.1",
+  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
   "main": "index.js",
   "scripts": {
     "test": "webpack --mode production --plugin ./index.js -o example/dist.js example/index.js && node example/dist.js",
