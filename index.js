@@ -1,6 +1,6 @@
 const { RawSource } = require("webpack-sources");
 
-const PLUGIN_NAME = "InlineRequirePlugin";
+const PLUGIN_NAME = "InlineRequiresPlugin";
 
 function getImportPattern() {
   return /(\/\* [^*]+ \*\/\s+)?var (_[^ ]+__WEBPACK_IMPORTED_MODULE_[^ ]+) = ([^;]+);/g;
@@ -36,7 +36,7 @@ function collectRequires(src) {
   return requireVariables;
 }
 
-class InlineRequirePlugin {
+class InlineRequiresPlugin {
   constructor(options = {}) {
     this.options = {};
   }
@@ -78,4 +78,4 @@ class InlineRequirePlugin {
   }
 }
 
-module.exports = InlineRequirePlugin;
+module.exports = InlineRequiresPlugin;

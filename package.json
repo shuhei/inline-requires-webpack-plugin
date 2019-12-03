@@ -1,5 +1,5 @@
 {
-  "name": "@shuhei/inline-require-webpack-plugin",
+  "name": "@shuhei/inline-requires-webpack-plugin",
   "version": "0.0.1",
   "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
   "main": "index.js",
