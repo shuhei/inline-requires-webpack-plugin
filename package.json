@@ -1,0 +1,18 @@
+{
+  "name": "@shuhei/inline-require-webpack-plugin",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --mode production --plugin ./index.js -o example/dist.js example/index.js && node example/dist.js",
+    "test-dev": "webpack --mode development --plugin ./index.js -o example/dist.js example/index.js && node example/dist.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "webpack-sources": "^1.4.0"
+  }
+}
