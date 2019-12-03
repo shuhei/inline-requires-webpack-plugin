@@ -14,5 +14,8 @@
   },
   "peerDependencies": {
     "webpack-sources": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
